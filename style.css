@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+
+:root {
+  --pink-primary: rgb(232, 89, 113);
+  --blue-primary: rgb(26, 149, 197);
+  --yellow-primary: yellow;
+  --pink-secondary: rgb(253, 224, 229);
+  --blue-secondary: rgb(217, 236, 248);
+  --yellow-secondary: rgb(255, 255, 190);
+  --grey-primary: rgb(57, 56, 56);
+}
+body {
+  font-family: "Mukta", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* colors */
+.grey {
+  color: var(--grey-primary);
+}
+
+.white {
+  color: white;
+}
+/* .pink {
+  color: var(--pink-primary);
+}
+.blue {
+  color: var(--blue-primary);
+}
+.yellow {
+  color: var(--yellow-primary);
+} */
+/* .pink-dark-bg {
+  background-color: var(--pink-primary);
+}
+.blue-dark-bg {
+  background-color: var(--blue-primary);
+}
+.yellow-dark-bg {
+  background-color: var(--yellow-primary);
+} */
+/* .pink-bg {
+  background-color: var(--pink-secondary);
+}
+
+.blue-bg {
+  background-color: var(--blue-secondary);
+}
+
+.yellow-bg {
+  background-color: var(--yellow-secondary);
+} */
+.font-h2 {
+  font-size: 24px;
+}
+
+.umbrella-img-container {
+  position: relative;
+}
+
+.umbrella-img {
+  height: 300px;
+  width: 350px;
+}
+.colors-list-container {
+  display: flex;
+  gap: 20px;
+}
+
+#colors-btn {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+.border-3px {
+  border: 3px solid black;
+}
+.header {
+  font-size: 2.6rem;
+}
+.upload-file-container {
+  color: white;
+  background-color: var(--blue-primary);
+  width: 19rem;
+  height: 2.7rem;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+}
+
+.fa-upload,
+.fa-times {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.upload-logo-text {
+  font-size: 24px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.brand-logo {
+  position: absolute;
+  bottom: 2rem;
+  left: 8rem;
+  height: 2rem;
+  width: 6rem;
+}
+
+.loader {
+  position: absolute;
+  top: 7.5rem;
+  left: 7.9rem;
+  height: 4rem;
+  width: 6rem;
+}
+.fade{
+  animation: fade-in 500ms forwards;
+}
+
+
+.rotate {
+  animation: animName 2s linear infinite;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animName {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    flex-direction: column;
+    margin: 5rem;
+    gap: 1rem;
+  }
+}

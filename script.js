@@ -62,6 +62,9 @@ let currentUmbrella = {
 umbrella_img.src = currentUmbrella.src;
 var uploaded_image = "";
 body.style.backgroundColor = allImagesDatabase[1].backgroundColor;
+fa_times.style.display = "none";
+brand_logo.style.display = "none";
+loader.style.display = "none";
 
 const createColorBtns = (c) => {
   var div = document.createElement("div");
@@ -72,28 +75,19 @@ const createColorBtns = (c) => {
 
 allImagesDatabase.map((newColor) => createColorBtns(newColor));
 
-fa_times.style.display = "none";
-brand_logo.style.display = "none";
-loader.style.display = "none";
-
 function updateUmbrellaColor(indexOfSelectedColor) {
-  colors_list_container.children[img].style.border = "2px solid black";
+  colors_list_container.children[1].style.border = `4px solid ${allImagesDatabase[1].borderColor}`;
   currentUmbrella.color = allImagesDatabase[indexOfSelectedColor].color;
   currentUmbrella.src = allImagesDatabase[indexOfSelectedColor].src;
+
   for (const img in allImagesDatabase) {
     if (allImagesDatabase[img].color === currentUmbrella.color) {
       colors_list_container.children[img].style.border = "2px solid black";
-      // colors_btn[
-      //   img
-      // ].style.border = `4px solid ${allImagesDatabase[img].borderColor}`;
-
       body.style.backgroundColor = allImagesDatabase[img].backgroundColor;
-
       upload_file_container.style.backgroundColor =
         allImagesDatabase[img].borderColor;
     } else {
-      // colors_btn[img].style.border = "none";
-      console.log("else");
+      colors_list_container.children[img].style.border = "none";
     }
   }
 

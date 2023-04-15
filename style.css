@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
 
-:root {
-  --pink-primary: rgb(232, 89, 113);
-  --blue-primary: rgb(26, 149, 197);
-  --yellow-primary: yellow;
-  --pink-secondary: rgb(253, 224, 229);
-  --blue-secondary: rgb(217, 236, 248);
-  --yellow-secondary: rgb(255, 255, 190);
-  --grey-primary: rgb(57, 56, 56);
-}
 body {
   font-family: "Mukta", sans-serif;
   margin: 0;
@@ -22,41 +13,13 @@ body {
 
 /* colors */
 .grey {
-  color: var(--grey-primary);
+  color:rgb(57, 56, 56);
 }
 
 .white {
   color: white;
 }
-/* .pink {
-  color: var(--pink-primary);
-}
-.blue {
-  color: var(--blue-primary);
-}
-.yellow {
-  color: var(--yellow-primary);
-} */
-/* .pink-dark-bg {
-  background-color: var(--pink-primary);
-}
-.blue-dark-bg {
-  background-color: var(--blue-primary);
-}
-.yellow-dark-bg {
-  background-color: var(--yellow-primary);
-} */
-/* .pink-bg {
-  background-color: var(--pink-secondary);
-}
 
-.blue-bg {
-  background-color: var(--blue-secondary);
-}
-
-.yellow-bg {
-  background-color: var(--yellow-secondary);
-} */
 .font-h2 {
   font-size: 24px;
 }

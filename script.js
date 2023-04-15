@@ -47,14 +47,14 @@ fa_times.style.display = "none";
 brand_logo.style.display = "none";
 loader.style.display = "none";
 
-const createColorBtns = (c) => {
+const createColorOptions = (c) => {
   var div = document.createElement("div");
   colors_list_container.appendChild(div);
   div.id = "colors-btn";
   div.style.backgroundColor = c.color;
 };
 
-allImagesDatabase.map((newColor) => createColorBtns(newColor));
+allImagesDatabase.map((newColor) => createColorOptions(newColor));
 
 colors_list_container.children[1].style.border = `4px solid ${allImagesDatabase[1].borderColor}`;
 
